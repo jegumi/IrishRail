@@ -5,6 +5,7 @@ import java.util.Calendar;
 import java.util.List;
 
 import roboguice.inject.InjectView;
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.database.Cursor;
 import android.os.AsyncTask;
@@ -106,6 +107,7 @@ public class MainActivity extends RoboSherlockFragmentActivity {
         fillStationsSpinner(toSpinner);
     }
 
+    @SuppressLint("NewApi")
     public void fillStationsSpinner(Spinner spinner) {
         Cursor cursor = dataHelper.getStationsCursor(null);
         startManagingCursor(cursor);
