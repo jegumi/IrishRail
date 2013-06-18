@@ -152,7 +152,6 @@ public class MainActivity extends RoboSherlockFragmentActivity {
             fillSpinners();
             preferences.setDatabaseInit(true);
             dialog.dismiss();
-            new GetStationsTrainsAsyncTask().execute();
         }
     }
 
