@@ -107,7 +107,6 @@ public class MainActivity extends RoboSherlockFragmentActivity {
         fillStationsSpinner(toSpinner);
     }
 
-    @SuppressLint("NewApi")
     public void fillStationsSpinner(Spinner spinner) {
         Cursor cursor = dataHelper.getStationsCursor(null);
         startManagingCursor(cursor);
@@ -115,7 +114,7 @@ public class MainActivity extends RoboSherlockFragmentActivity {
         int[] to = new int[] { android.R.id.text1 };
 
         SimpleCursorAdapter adapter = new SimpleCursorAdapter(this, android.R.layout.simple_spinner_item, cursor,
-                columns, to, 0);
+                columns, to);
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
