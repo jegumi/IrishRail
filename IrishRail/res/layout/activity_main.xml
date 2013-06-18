@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_layout" >
+
+    <RelativeLayout
+        android:id="@+id/stations_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/back_direction_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/spacing_standard"
+        android:src="@drawable/ic_action_return" />
+
+    <TextView
+        android:id="@+id/from_title_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_standard"
+        android:layout_toLeftOf="@+id/back_direction_button"
+        android:text="@string/from_title" />
+
+    <View
+        android:id="@+id/from_title_separator"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/from_title_textview"
+        android:layout_toLeftOf="@+id/back_direction_button"
+        android:background="@color/separator_color" />
+
+    <Spinner
+        android:id="@+id/from_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from_title_separator"
+        android:padding="@dimen/spacing_standard"
+        android:layout_toLeftOf="@+id/back_direction_button"
+        android:prompt="@string/from_spinner" />
+
+    <TextView
+        android:id="@+id/to_title_text_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from_spinner"
+        android:layout_toLeftOf="@+id/back_direction_button"
+        android:padding="@dimen/spacing_standard"
+        android:text="@string/to_title" />
+
+    <View
+        android:id="@+id/to_title_separator"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/to_title_text_view"
+        android:layout_toLeftOf="@+id/back_direction_button"
+        android:background="@color/separator_color" />
+
+    <Spinner
+        android:id="@+id/to_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/to_title_separator"
+        android:layout_toLeftOf="@+id/back_direction_button"
+        android:padding="@dimen/spacing_standard"
+        android:prompt="@string/to_spinner" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/refresh_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stations_layout"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:padding="@dimen/spacing_standard"
+        android:text="@string/refresh_trains" />
+
+    <ListView
+        android:id="@+id/stations_data_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/refresh_button"
+        android:layout_marginTop="@dimen/spacing_large" />
+
+    <TextView
+        android:id="@+id/no_trains_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/refresh_button"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:text="@string/no_trains"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IrishRail</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="from_title">ORIGIN STATION</string>
+    <string name="to_title">DESTINATION STATION</string>
+    <string name="from_spinner">From</string>
+    <string name="to_spinner">From</string>
+    <string name="loading">Loading</string>
+    <string name="train_info">Train %1$s from %2$s to %3$s</string>
+    <string name="arrives_info_delay">Arrives to %1$s at %2$s with delay of %3$s</string>
+    <string name="arrives_info">Arrives to %1$s at %2$s</string>
+    <string name="refresh_trains">Check next train</string>
+    <string name="no_trains">No trains between %1$s and %2$s in the next 90 minutes</string>
+
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+
+    <dimen name="separator_height">2dp</dimen>
+    <dimen name="spacing_standard">8dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="padding_layout">16dp</dimen>
+
+</resources>
